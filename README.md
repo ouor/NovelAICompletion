@@ -19,7 +19,7 @@ chatgpt-4o-latest, deepseek-chat 등 LLM을 활용해 자연어 설명 → Danbo
 
 1. **저장소 클론**:
    ```bash
-   git clone https://github.com/your-repo/novelai-prompt-completion.git
+   git clone https://github.com/ouor/NovelAICompletion.git
    ```
 2. **크롬 확장 프로그램 페이지** 이동:  
    `chrome://extensions/`
