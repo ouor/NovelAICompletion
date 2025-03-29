@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "NovelAI Prompt Completion",
+    "version": "1.0",
+    "description": "NovelAI 이미지 생성 프롬프트 자동 완성 크롬 확장입니다.",
+    "permissions": [
+      "storage",
+      "scripting",
+      "activeTab"
+    ],
+    "host_permissions": [
+      "https://novelai.net/image*"
+    ],
+    "options_page": "options.html",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://novelai.net/image*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
